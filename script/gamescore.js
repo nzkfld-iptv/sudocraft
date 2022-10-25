@@ -22,7 +22,7 @@ function nomulti() {
   remove("blahblah");
 }
 function playmulti() {
-  addhtml("<div id='blahblah' style='position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0;'><input style='width: 90%; outline: none;' type='text' placeholder='multyplayer game url add https' id='multyurl' autocomplete='off' /><input type='button' onclick='startmultigame()' value='summit' /></div><div id='nomulti' style='color: red; position:absolute; left:0; bottom:0; font-weight: bold; font-size: 70px;z-index: 2;cursor: pointer;' onclick='nomulti();'>x</div>");
+  addhtml("<div id='blahblah' style='position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0;'><input style='width: 90%; outline: none;' type='text' placeholder='Nhập server link vào đây (http://)' id='multyurl' autocomplete='off' /><input type='button' onclick='startmultigame()' value='summit' /></div><div id='nomulti' style='color: red; position:absolute; left:0; bottom:0; font-weight: bold; font-size: 70px;z-index: 2;cursor: pointer;' onclick='nomulti();'>x</div>");
 }
 function startmultigame() {
   remove("nomulti")
