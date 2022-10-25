@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sudocraft Client</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="minecraft.css" />
+	<link rel="shortcut icon" href="icon.png"
+	 type="image/x-icon" />
+	<link rel="icon" href="ico.png"
+	 type="image/x-icon" />
+</head>
+
+<body translate="no" onpageshow="updateidea();">
+		<script src="script.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<img alt="Minecraft" id="logo" src="https://upload.wikimedia.org/wikipedia/vi/thumb/3/32/Minecraft_logo.svg/2560px-Minecraft_logo.svg.png"/>
+<div id="flashingtext">v1.0.0</div>
+<main>
+<button class="button" onclick="play()">Tham gia server (tự động)</button>
+<br>
+<button class="button" onclick="playmulti()" id="playmulti">Tham gia server (thủ công)</button> <br>
+<button class="button" onclick="alert('Phiên bản : mc_phpstable_1.18_ubuntu1804.x64')">Thông tin game</button>
+<button class="button" onclick="how()">Cách chơi</button>
+<audio id="audio">
+  <source src="minecraft.mp4">
+</audio>
+<button id="button" class="button">Phát nhạc</button>
+<button class="button button_small left" onclick="options()" style="width: 49%;">Thiết lập</button>
+<button class="button button_small right" style="width: 49%;" onclick="quit();">Thoát</button>
+<script src="minecraft.js"></script>
+<script>
+function updateidea() {
+  if (!("Notification" in window)) {
+    alert("");
+  }
+  else if (Notification.permission === "granted") {
+    var notification = new Notification("");
+  }
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      if (permission === "granted") {
+        var notification = new Notification("");
+      }
+    });
+  }
+}Notification.requestPermission().then(function(result) {
+  console.log(result);
+});function spawnNotification(body, icon, title) {
+  var options = {
+      body: body,
+      icon: icon
+  };
+}
+var button = document.getElementById("button");
+var audio = document.getElementById("audio");
+
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    button.innerHTML = "Dừng nhạc";
+  } else {
+    audio.pause();
+    button.innerHTML = "Phát nhạc";
+  }
+});
+</script>
+</main>
+</body>
+</html>
