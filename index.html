@@ -4,7 +4,7 @@
 	<title>Sudocraft Client</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="minecraft.css" />
+	<link rel="stylesheet" href="/client/sudocraft.css" />
 	<link rel="shortcut icon" href="icon.png"
 	 type="image/x-icon" />
 	<link rel="icon" href="ico.png"
@@ -12,9 +12,9 @@
 </head>
 
 <body translate="no" onpageshow="updateidea();">
-		<script src="script.js">
+		<script src="/script/setting.js">
 		</script>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="/client/themescore.css">
 		<img alt="Minecraft" id="logo" src="https://upload.wikimedia.org/wikipedia/vi/thumb/3/32/Minecraft_logo.svg/2560px-Minecraft_logo.svg.png"/>
 <div id="flashingtext">v1.0.0</div>
 <main>
@@ -29,7 +29,7 @@
 <button id="button" class="button">Phát nhạc</button>
 <button class="button button_small left" onclick="options()" style="width: 49%;">Thiết lập</button>
 <button class="button button_small right" style="width: 49%;" onclick="quit();">Thoát</button>
-<script src="minecraft.js"></script>
+<script src="/script/gamescore.js"></script>
 <script>
 function updateidea() {
   if (!("Notification" in window)) {
