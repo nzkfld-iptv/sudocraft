@@ -63,12 +63,12 @@ footer {
 	margin-top: 5%;
 }
 .button:hover {
-	background: #7079AA url("buttons.png") no-repeat bottom;
+	background: #7079AA url("/image/buttons.png") no-repeat bottom;
 	background-size: 100% 300%;
 	color: #FFFFA0;
 }
 .button:disabled, .button[disabled] {
-	background: #272727 url("buttons.png") no-repeat top;
+	background: #272727 url("/image/buttons.png") no-repeat top;
 	background-size: 100% 300%;
 	color: #A9A9A9;
 }
