@@ -2,7 +2,7 @@ function options() {
   addhtml("<div style='position:fixed; top:0; left:0; text-align:center; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:1.5; color:white; background-color:black; font-size:125%;' id='options'>Bạn muốn làm gì ngay bây giờ nào? <button class='button'onclick='change()'>Thay đổi dòng chữ cạnh logo Minecraft</button><button onclick='openwindowform()' class='button'>Open window form</button><button onclick='enablenarrations()' id='en' class='button'>Enable narrations</button><button onclick='closeoptions()' class='button'>Đóng (x)</button></div>");
 }
 function enablenarrations() {
-alert("thing")
+alert("⚠️ [1033] Lỗi! Bạn bị chặn truy cập nguồn tài nguyên này!")
   } 
 function change() {
   text = prompt("Bạn muốn đặt dòng chữ như nào?");
